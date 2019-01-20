@@ -19,7 +19,7 @@ nav{
 	top:5px;
 	right:calc(50% - 30px);
 	border-radius:60px;
-	box-shadow: 0 0 2px #d454a5;
+	box-shadow: 0 0 1px #fafafa;
 }
 
 #menu-button{
@@ -30,11 +30,11 @@ nav{
 	top:15px;
 	left:20px;
 	background-color:#171717;
-	color:#d454a5;
+	color:#979797;
 	font-size:20px;
 	text-align:center;
 	border-radius:3px;
-	box-shadow: 0 0 2px #d454a5;
+	box-shadow: 0 0 2px #979797;
 }
 
 #menu-container{
@@ -64,14 +64,14 @@ nav{
 	display:inline-block;
 	float:left;
 	background-color:#1a1a1a;
-	color:#d454a5;
+	color:#171717;
 	font-size:22px;
+	font-weight:bold;
 	text-align:center;
 	border-radius:3px;
 	box-shadow: 0 0 1px #000;
+	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505;
 }
-
-
 
 section{
 	min-height:700px;
@@ -83,15 +83,26 @@ section{
 	padding-top:70px;
 }
 
-.main-header{
-	height:100px;
-	line-height:100px;
+#section-two{
+	background-image:linear-gradient(to right, #1f1f1f, #2a2a2a, #252525, #2a2a2a, #2f2f2f);
+}
+
+.gradient-container{
+	width:100%;
+	height:70px;
+	line-height:70px;
+	background-image:linear-gradient(45deg, #d47575, #d57459);
+	border-bottom: solid 1px #525252;
+}
+
+.mid-header{
 	color:#323232;
 	font-weight:bold;
 	font-size:30px;
 	text-align:center;
-	text-shadow: 0px 0px 4px #d48a50;
+	text-shadow: 0 0 5px #fafafa, 0 0 7px #050505;
 }
+
 
 
 
