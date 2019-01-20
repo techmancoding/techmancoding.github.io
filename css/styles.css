@@ -12,7 +12,7 @@ body{
 	font-weight:bold;
 	font-size:50px;
 	text-align:center;
-	text-shadow:0px 2px 10px #d47a60;
+	text-shadow:0px 2px 10px #d48a50;
 }
 
 nav{
@@ -27,7 +27,22 @@ nav{
 	top:5px;
 	right:calc(50% - 30px);
 	border-radius:60px;
-	box-shadow: 0 0 10px #d454a5;
+	box-shadow: 0 0 7px #d454a5;
+}
+
+#menu-button{
+	width:40px;
+	height:40px;
+	line-height:40px;
+	position:absolute;
+	top:15px;
+	left:20px;
+	background-color:#171717;
+	color:#d454a5;
+	font-size:20px;
+	text-align:center;
+	border-radius:3px;
+	box-shadow: 0 0 2px #d454a5;
 }
 
 footer{
@@ -62,6 +77,14 @@ footer{
 
 .flip-back{
 	background-color:#d48a50;
+}
+
+.disable-select{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 
 /* secure correct behavior of the new eight HTML5 semantic elements in older browsers */

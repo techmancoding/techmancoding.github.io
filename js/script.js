@@ -1,4 +1,6 @@
 
 $(document).ready(function(){
-	$('#testJquery').html("welcome to TechMan Coding site !").css({"color":"#656565","text-align":"center"});
+	$('#menu-button').on('click', function(){
+		alert('you clicked on menu - you need to implement this !!!');
+	});
 });
