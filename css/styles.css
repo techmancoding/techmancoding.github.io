@@ -1,7 +1,6 @@
 body{
 	margin:0px;
 	padding:0px;
-	background-color: #252525;
 	font-family: "monospace","New Lucida Console";
 }
 
@@ -40,8 +39,9 @@ nav{
 
 #menu-container{
 	width:290px;
-	min-height:430px;
-	max-height:440px;
+	min-height:420px;
+	max-height:430px;
+	padding-bottom:10px;
 	position:relative;
 	top:70px;
 	left:0;
