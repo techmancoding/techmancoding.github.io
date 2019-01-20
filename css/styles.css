@@ -10,6 +10,7 @@ nav{
 	position:fixed;
 	top:0;
 	background-color:#121212;
+	z-index:1000;
 }
 
 .nav-logo{
@@ -107,6 +108,24 @@ section{
 	padding-top:70px;
 }
 
+.code-snippet{
+	width:400px;
+	min-height:200px;
+	max-height:500px;
+	padding:10px;
+	margin:10px;
+	position:relative;
+	left:calc(50% - 220px);
+	Overflow:scroll;
+	background-image: linear-gradient(90deg, #232323, #2a2a2a,#232323);
+	color: #757575;
+	font-size:18px;
+	font-family:"monospace", "Courier";
+	border-radius:3px;
+}
+
+
+
 
 /***************/
 .flip-front, .flip-back{
@@ -160,6 +179,14 @@ footer{
 	-ms-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+}
+
+::selection {
+  background: #d55aa0;
+}
+
+::-moz-selection {
+  background: #d55aa0;
 }
 
 /* secure correct behavior of the new eight HTML5 semantic elements in older browsers */
