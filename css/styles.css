@@ -41,7 +41,7 @@ nav{
 #menu-container{
 	width:290px;
 	min-height:430px;
-	max-height:600px;
+	max-height:440px;
 	position:relative;
 	top:70px;
 	left:0;
@@ -57,9 +57,10 @@ nav{
 
 .menu-item-container{
 	width:130px;
-	height:130px;
-	line-height:130px;
+	height:90px;
+	line-height:130%;
 	margin: 10px 0 0 10px;
+	padding-top:40px;
 	display:inline-block;
 	float:left;
 	background-color:#1a1a1a;
@@ -76,6 +77,10 @@ section{
 	min-height:700px;
 	background-color:171717;
 	border-bottom: solid 1px #373737;
+}
+
+#section-one{
+	padding-top:70px;
 }
 
 .main-header{
