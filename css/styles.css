@@ -39,8 +39,8 @@ nav{
 }
 
 #menu-container{
-	width:300px;
-	min-height:400px;
+	width:290px;
+	min-height:430px;
 	max-height:600px;
 	position:relative;
 	top:70px;
@@ -56,15 +56,18 @@ nav{
 }
 
 .menu-item-container{
-	width:270px;
-	height:40px;
-	line-height:40px;
-	margin: 5px;
-	padding: 0 10px;
-	background-color:#171717;
+	width:130px;
+	height:130px;
+	line-height:130px;
+	margin: 10px 0 0 10px;
+	display:inline-block;
+	float:left;
+	background-color:#1a1a1a;
 	color:#d454a5;
-	font-size:25px;
+	font-size:22px;
+	text-align:center;
 	border-radius:3px;
+	box-shadow: 0 0 1px #000;
 }
 
 
