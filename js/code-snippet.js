@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	var words = ['function', 'var', 'return'];
+	var words = ['function', 'var', 'return','alert'];
 	var $pre = $('.code-snippet pre');
 	var code = $pre.html();
 	
