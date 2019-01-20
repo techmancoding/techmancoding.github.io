@@ -48,7 +48,7 @@ nav{
 	background-color:#151515;
 	Overflow:scroll;
 	border-radius:3px;
-	border: solid 1px #000000;
+	border: solid 1px #151515;
 }
 
 #menu-container a{
@@ -63,7 +63,7 @@ nav{
 	padding-top:40px;
 	display:inline-block;
 	float:left;
-	background-color:#1a1a1a;
+	background-image:linear-gradient(to right, #292929, #373737, #2a2a2a);
 	color:#171717;
 	font-size:22px;
 	font-weight:bold;
@@ -73,18 +73,12 @@ nav{
 	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505;
 }
 
-section{
-	min-height:700px;
-	background-color:171717;
-	border-bottom: solid 1px #373737;
+.gradient-gray-vertical{
+	background-image:linear-gradient(to right, #292929, #333333, #292929);
 }
 
-#section-one{
-	padding-top:70px;
-}
-
-#section-two{
-	background-image:linear-gradient(to right, #1f1f1f, #2a2a2a, #252525, #2a2a2a, #2f2f2f);
+.gradient-gray-horizontal{
+	background-image:linear-gradient(180deg, #292929, #333333, #292929);
 }
 
 .gradient-container{
@@ -103,13 +97,21 @@ section{
 	text-shadow: 0 0 5px #fafafa, 0 0 7px #050505;
 }
 
+section{
+	min-height:700px;
+	background-color:171717;
+	border-bottom: solid 1px #555555;
+}
 
+#section-one{
+	padding-top:70px;
+}
 
 
 /***************/
 .flip-front, .flip-back{
 	width:calc(50% - 25px);
-	height:300px;
+	height:200px;
 	margin:10px;
 	display:inline-block;
 	border-radius:3px;	
