@@ -54,6 +54,14 @@ function helloFriend(newFriend){
         alert(beNice);
     }
     
+    for(var key in newFriend){
+        var friend = newFriend[key];
+        var name = friend.name;
+        var age = friend.age;
+    }
+    
+    alert('name is:' + name);
+    
     var friend = JSON.stringify(newFriend, null, 4);
     
     return friend;
