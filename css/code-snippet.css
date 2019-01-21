@@ -14,25 +14,3 @@
 	border-radius:3px;
 	box-shadow: 0 0 3px #aeaeae;
 }
-
-/* csw = code snippet word */
-
-.csw-literals{
-	color:#4167d7;
-	font-weight:bold;
-}
-
-.csw-keywords{
-	color:#d57a60;
-	font-weight:bold;
-}
-
-.csw-special{
-	color:#a54762;
-	font-weight:bold;
-}
-
-.csw-alert{
-	color:#a53567;
-	font-weight:bold;
-}

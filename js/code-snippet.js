@@ -14,31 +14,54 @@ $(document).ready(function(){
 	'protected', 'public', 'short', 'static', 'super', 'switch', 'synchronized', 'this',
 	'throws', 'transient', 'try', 'typeof', 'void', 'volatile', 'while', 'with', 'yield'];
 	
-	var jsLiterals =['null','true','false'];
-		
-	var jsSpecialWords = ['function', 'var', 'return'];
+	
+	var jsReservedWords = {
+		'boolean' : {
+			'words':['true','false'],
+			'styles':'color:#452398; font-weight:bold;',
+			'regex':''
+		},
+		'null' : {
+			'words':['null'],
+			'styles':'color:#652375; font-weight:bold; font-style:italic;',
+			'regex':''
+		},
+		'function' : {
+			'words':['function'],
+			'styles':'color:#3523da; font-weight:bold;',
+			'regex':''
+		},
+		'return' : {
+			'words':['return'],
+			'styles':'color:#ad237a; font-weight:bold;',
+			'regex':''
+		},
+		'var' : {
+			'words':['var'],
+			'styles':'color:#d47a60;',
+			'regex':''
+		},
+	}
 	
 	var $pre = $('.code-snippet-container pre');
 	var code = $pre.html();
-	
-	/*for(var i=0; i<jsKeywords.length; i++){
-		var word = jsKeywords[i];
-		code = code.replace(new RegExp( "\\b" + word + "\\b", 'g'), '<span class="csw-keywords">' + word + '</span>');
-	}*/
-	
-	var newCode = replaceWithRegex(code, jsKeywords, 'csw-keywords');
-	newCode = replaceWithRegex(newCode, jsLiterals, 'csw-literals');
-	newCode = replaceWithRegex(newCode, jsSpecialWords, 'csw-special');
-	
-	$pre.html(newCode);
+	//alert(highlightWords(code, jsReservedWords));
+	$pre.html(highlightWords(code, jsReservedWords));
 });
 
 
+function highlightWords(code, wordsObject){
 
-function replaceWithRegex(codeStr, wordsArray, classToSpan){
-	for(var i=0; i<wordsArray.length; i++){
-		var word = wordsArray[i];
-		codeStr = codeStr.replace(new RegExp( "\\b" + word + "\\b", 'g'), '<span class="' + classToSpan + '">' + word + '</span>');
-	}	
-	return codeStr;
+	for (var key in wordsObject) {
+		var obj = wordsObject[key];
+		var words = obj.words;
+		var styles = obj.styles;
+		
+		for(var i=0; i<words.length; i++){
+			var word = words[i];
+			code = code.replace(new RegExp( "\\b" + word + "\\b", 'g'), '<span style="' + styles + '">' + word + '</span>');
+		}	
+	}
+	
+	return code;
 }
