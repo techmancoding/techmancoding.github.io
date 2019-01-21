@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+		
 	/*var allKeywords =['break', 'byte', 'case', 'catch', 'char', 'class', 'const', 'continue',
 	'debugger', 'default', 'delete', 'do', 'double', 'else', 'enum', 'eval', 'export', 'extends',
 	'final', 'finally', 'float', 'for', 'function', 'goto', 'if', 'implements', 'import', 'in',
@@ -53,16 +53,16 @@ $(document).ready(function(){
 		},
 		'equalSymbol' : {
 			'words':[''],
-			'styles':'color:#865a97; text-shadow: 0 0 1px #a1a1a1;',
+			'styles':'color:#665a77;',
 			'regex': / ={1,3} /g,			
 		},
 		'jsFunctions' : {
-			'words':['alert', 'stringify'],
+			'words':['alert', 'stringify', 'log'],
 			'styles':'color:#d47a60;',
 			'regex': '',			
 		},
 		'classes' : {
-			'words':['JSON'],
+			'words':['JSON', 'console'],
 			'styles':'color:#e67a97;',
 			'regex': '',			
 		},

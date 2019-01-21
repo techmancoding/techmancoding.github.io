@@ -56,12 +56,12 @@ function helloFriend(newFriend){
     }
     
     for(var key in newFriend){
-        var friend = newFriend[key];
-        var name = friend.name;
-        var age = friend.age;
+        var f = newFriend[key];
+        var name = f.name;
+        var age = f.age;
+        
+        console.log('name is:' + name + ' , age is: ' + age);
     }
-    
-    alert('name is:' + name);
     
     var friend = JSON.stringify(newFriend, null, 4);
     
