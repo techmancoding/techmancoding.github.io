@@ -30,7 +30,6 @@ $(document).ready(function(){
 	newCode = replaceWithRegex(newCode, jsLiterals, 'csw-literals');
 	newCode = replaceWithRegex(newCode, jsSpecialWords, 'csw-special');
 	
-	alert(newCode);
 	$pre.html(newCode);
 });
 
