@@ -66,11 +66,21 @@ $(document).ready(function(){
 			'styles':'color:#e67a97;',
 			'regex': '',			
 		},
-		/*'statements' : {
+		'comments' : {
+			'words':[''],
+			'styles':'color:#96dad7;',
+			'regex': /(\/\*([^*]|[\r\n]|(\*+([^*\/]|[\r\n])))*\*+\/)|(\/\/.*)/g,			
+		},
+		/*'operators' : {
+			'words':[''],
+			'styles':'color:#f65a77;',
+			'regex': /&amp;{1,2}/g,			
+		}
+		'statements' : {
 			'words':[''],
 			'styles':'color:#a85499;',
 			'regex': /(if|else if|while|do while) *\([^)]+\)/g,			
-		},*/	
+		}*/	
 	}	
 	
 	var $pre = $('.code-snippet-container pre');
@@ -96,9 +106,9 @@ function highlightWords(code, wordsObject){
 				code = code.replace(new RegExp( "\\b" + word + "\\b", 'g'), '<span style="' + styles + '">' + word + '</span>');
 			} 
 			else{			
-				var matches = code.match(regex);
+				var matches = code.match(regex);				
 				for(var k=0; k<matches.length; k++){					
-					var match = matches[k];		
+					var match = matches[k];	
 					code = code.replace(new RegExp(match, 'g'), '<span style="' + styles + '">' + match + '</span>');	
 				}					
 			}
