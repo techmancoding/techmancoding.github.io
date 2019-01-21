@@ -42,14 +42,21 @@
 		</nav>
 	
 		<section id="section-one">
-			<div class="code-snippet">
+			<div class="code-snippet-container">
 <pre>
-function helloFriends(friend){
-    var welcome = 'welcome friend to the TechMan Coding website';
-    alert(welcome);
-    var newFriend = JSON.stringify(friend, null, 4);
+function helloFriend(newFriend){
+    if(newFriend.isNice === true){
+        var welcome = 'welcome friend to the TechMan Coding website';
+        alert(welcome);
+    }
+    else if(newFriend.isNice === false){
+        var beNice = 'hello friend, we recommend that you learn how to be nice in our nice course';
+        alert(beNice);
+    }
     
-    return newFriend;
+    var friend = JSON.stringify(newFriend, null, 4);
+    
+    return friend;
 }
 </pre>
 			</div>

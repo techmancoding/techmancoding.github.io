@@ -1,4 +1,4 @@
-.code-snippet{
+.code-snippet-container{
 	width:400px;
 	min-height:200px;
 	max-height:500px;
@@ -17,18 +17,18 @@
 
 /* csw = code snippet word */
 
-.csw-function{
+.csw-literals{
 	color:#4167d7;
 	font-weight:bold;
 }
 
-.csw-return{
-	color:#af8556;
+.csw-keywords{
+	color:#d57a60;
 	font-weight:bold;
 }
 
-.csw-var{
-	color:#d57a60;
+.csw-special{
+	color:#a54762;
 	font-weight:bold;
 }
 
