@@ -28,7 +28,7 @@ $(document).ready(function(){
 		},
 		'function' : {
 			'words':['function'],
-			'styles':'color:#3523da; font-weight:bold;',
+			'styles':'color:#e67a95; font-weight:bold;',
 			'regex':''
 		},
 		'return' : {
@@ -38,35 +38,46 @@ $(document).ready(function(){
 		},
 		'var' : {
 			'words':['var'],
-			'styles':'color:#d47a60;',
+			'styles':'color:#d79580;',
 			'regex':''
 		},
 		'statements' : {
 			'words':['if', 'else', 'for', 'while', 'in'],
-			'styles':'color:#355489; font-weight:bold;',
+			'styles':'color:#7554e9;',
 			'regex':''
 		},
 		'string' : {
 			'words':[''],
-			'styles':'color:#289a39;',
+			'styles':'color:#d55e70;',
 			'regex': /\'[^']+\'/g,			
+		},
+		'equalSymbol' : {
+			'words':[''],
+			'styles':'color:#865a97; text-shadow: 0 0 1px #a1a1a1;',
+			'regex': / ={1,3} /g,			
+		},
+		'jsFunctions' : {
+			'words':['alert', 'stringify'],
+			'styles':'color:#d47a60;',
+			'regex': '',			
+		},
+		'classes' : {
+			'words':['JSON'],
+			'styles':'color:#e67a97;',
+			'regex': '',			
 		},
 		/*'statements' : {
 			'words':[''],
 			'styles':'color:#a85499;',
-			'regex': /(if|else if)\([^)]+\)/g,			
-		},	
-		'loops' : {
-			'words':[''],
-			'styles':'color:#5874a9;',
-			'regex': /(for|while|do while)\([^)]+\)/g,			
-		},*/
+			'regex': /(if|else if|while|do while) *\([^)]+\)/g,			
+		},*/	
 	}	
 	
 	var $pre = $('.code-snippet-container pre');
 	var code = $pre.html();
 
 	$pre.html(highlightWords(code, jsReservedWords));
+
 });
 
 
@@ -80,14 +91,16 @@ function highlightWords(code, wordsObject){
 		
 		for(var i=0; i<words.length; i++){
 			var word = words[i];
-			if(regex){
-				var matches = code.match(regex);				
-				for(var m=0; m<matches.length; m++){
-					code = code.replace(matches[m], '<span style="' + styles + '">' + matches[m] + '</span>');
-				}
+					
+			if(!regex){
+				code = code.replace(new RegExp( "\\b" + word + "\\b", 'g'), '<span style="' + styles + '">' + word + '</span>');
 			} 
-			else{		
-				code = code.replace(new RegExp( "\\b" + word + "\\b", 'g'), '<span style="' + styles + '">' + word + '</span>');	
+			else{			
+				var matches = code.match(regex);
+				for(var k=0; k<matches.length; k++){					
+					var match = matches[k];		
+					code = code.replace(new RegExp(match, 'g'), '<span style="' + styles + '">' + match + '</span>');	
+				}					
 			}
 		}	
 	}
