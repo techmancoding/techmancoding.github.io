@@ -19,9 +19,10 @@
 
 .blog-container{
 	width:calc(100% - 20px);
-	height:150px;
+	height:200px;
 	margin-bottom:1px;
 	padding:10px;
+	position:relative;
 	border-bottom: solid 1px #414243;
 }
 
@@ -97,4 +98,40 @@
 	background-color:232323;
 	display:inline-block;
 	float:right;
+}
+
+.blog-tags-container{
+	width:calc(100% - 20px);
+	height:29px;
+	position:absolute;
+	bottom:10px;
+}
+
+.blog-tag{
+	width:25px;
+	height:25px;
+	margin:1px 0 1px 10px;
+	background-color:#dedede;
+	display:inline-block;
+	float:left;
+	border-radius:3px;
+}
+
+.tag-css3,.tag-html5, .tag-js{
+	padding:1px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+}
+
+.tag-css3{
+	background-image:url(../img/css3-logo.png);
+}
+
+.tag-html5{
+	background-image:url(../img/html5-logo.png);
+}
+
+.tag-js{
+	background-image:url(../img/js-logo.png);
 }
