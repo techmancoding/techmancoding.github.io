@@ -88,8 +88,7 @@
 .blog-img-container{
 	width:auto;
 	height:auto;
-	margin:5px;
-	
+	margin:5px;	
 }
 
 .blog-img{
@@ -98,6 +97,10 @@
 	background-color:232323;
 	display:inline-block;
 	float:right;
+}
+
+.blog-anchor{
+	text-decoration: none;
 }
 
 .blog-tags-container{

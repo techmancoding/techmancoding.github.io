@@ -33,10 +33,12 @@ $(document).ready(function(){
 		var blogSummaryClass = isEven ? 'blog-summary-one' : 'blog-summary-two';
 		
 		blogContent += '<div class="blog-container ' + blogContainerClass + '">';
+		blogContent += '<a href="/blogs" class="blog-anchor">'
 		blogContent += '<div class="' + blogMainTitleClass + '">' + blog.mainTitle + '</div>';
 		blogContent += '<div class="' + blogSubTitleClass + '">' + blog.subTitle + '</div>';
 		blogContent += '<div class="' + blogSummaryClass + '">' + blog.summary + '</div>';
 		blogContent += '<div class="blog-img-container"><img src="' + blog.imagePath + '" class="blog-img"/></div>';		
+		blogContent += '</a>'
 		
 		var tagsArray = blog.tags;
 		if(tagsArray.length > 0){
