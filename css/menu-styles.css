@@ -67,11 +67,3 @@ nav{
 	box-shadow: 0 0 1px #000;
 	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505;
 }
-
-.gradient-gray-vertical{
-	background-image:linear-gradient(to right, #292929, #333333, #292929);
-}
-
-.gradient-gray-horizontal{
-	background-image:linear-gradient(180deg, #292929, #333333, #292929);
-}
