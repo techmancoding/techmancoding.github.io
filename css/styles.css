@@ -108,6 +108,10 @@ section{
 	padding-top:170px;
 }
 
+#section-three{
+	height:auto;
+	overflow:hidden;
+}
 
 
 /***************/
