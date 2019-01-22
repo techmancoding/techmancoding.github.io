@@ -41,12 +41,12 @@
 
 .blog-main-title-one{
 	color:#1a1a1a;
-	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 4px #3687be;
+	text-shadow: 0 0 1px #fafafa, 0 0 2px #050505, 0 0 3px #3687be;
 }
 
 .blog-main-title-two{
 	color:#171717;
-	text-shadow: 0 0 2px #e58f70, 0 0 4px #9774ae;
+	text-shadow: 0 0 1px #e58f70, 0 0 3px #9774ae;
 }
 
 .blog-sub-title-one, .blog-sub-title-two{
@@ -56,8 +56,8 @@
 }
 
 .blog-sub-title-one{
-	color:#232323;
-	text-shadow: 0 0 1px #654398, 0 0 2px #a1a1a1;
+	color:#010203;
+	text-shadow: 0 0 1px #ededed, 0 0 2px #7361a9;
 }
 
 .blog-sub-title-two{
