@@ -5,7 +5,35 @@ var BlogsJSON = {
 		'subTitle':'Learn CSS3 for modern web design',
 		'summary':'CSS3 is the latest version of CSS language (Cascading Style Sheets). in this course we will learn how to apply CSS3 to your website HTML and make your site look awesome.',
 		'imagePath':'./img/css3-logo.png',
-		'tags':['tag-css3', 'tag-html5']
+		'tags':['tag-css3', 'tag-html5'],
+		'href' : '/',
+		'articles' : {
+			'partOne' : {
+				'mainTitle':'CSS3 Tutorial',
+				'subTitle':'Learn CSS3 for modern web design',
+				'summary':'CSS3 is the latest version of CSS language (Cascading Style Sheets). in this course we will learn how to apply CSS3 to your website HTML and make your site look awesome.',
+				'paragraphs' : {
+					'p1' : {
+						'content' : 'css paragraph one',
+						'imagePath' : './img/html5-logo.png'
+					},
+					'p2' : {
+						'content' : 'css paragraph two',
+						'imagePath' : './img/js-logo.png'
+					}
+				}
+			},
+			'partTwo' : {
+				'mainTitle':'CSS3 Tutorial',
+				'subTitle':'Learn CSS3 for modern web design',
+				'summary':'CSS3 is the latest version of CSS language (Cascading Style Sheets). in this course we will learn how to apply CSS3 to your website HTML and make your site look awesome.',
+			},
+			'partThree' : {
+				'mainTitle':'CSS3 Tutorial',
+				'subTitle':'Learn CSS3 for modern web design',
+				'summary':'CSS3 is the latest version of CSS language (Cascading Style Sheets). in this course we will learn how to apply CSS3 to your website HTML and make your site look awesome.',			
+			}
+		}
 	}	
 	,
 	'javascript':{
