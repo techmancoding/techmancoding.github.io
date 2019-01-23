@@ -1,5 +1,13 @@
 
 var BlogsJSON = {
+	'html5': {
+		'mainTitle':'HTML5 Tutorial',
+		'subTitle':'Learn HTML5 for modern web design',
+		'summary':'HTML5 is the latest version of HTML language (Hyper Text Markup Language). in this course we will learn the basic of HTML5.',
+		'imagePath':'./img/html5-logo.png',
+		'tags':['tag-html5'],
+		'href' : '/tutorials/html5',
+	},	
 	'css3': {
 		'mainTitle':'CSS3 Tutorial',
 		'subTitle':'Learn CSS3 for modern web design',
@@ -7,35 +15,7 @@ var BlogsJSON = {
 		'imagePath':'./img/css3-logo.png',
 		'tags':['tag-css3', 'tag-html5'],
 		'href' : '/',
-		'articles' : {
-			'partOne' : {
-				'mainTitle':'CSS3 Tutorial',
-				'subTitle':'Learn CSS3 for modern web design',
-				'summary':'CSS3 is the latest version of CSS language (Cascading Style Sheets). in this course we will learn how to apply CSS3 to your website HTML and make your site look awesome.',
-				'paragraphs' : {
-					'p1' : {
-						'content' : 'css paragraph one',
-						'imagePath' : './img/html5-logo.png'
-					},
-					'p2' : {
-						'content' : 'css paragraph two',
-						'imagePath' : './img/js-logo.png'
-					}
-				}
-			},
-			'partTwo' : {
-				'mainTitle':'CSS3 Tutorial',
-				'subTitle':'Learn CSS3 for modern web design',
-				'summary':'CSS3 is the latest version of CSS language (Cascading Style Sheets). in this course we will learn how to apply CSS3 to your website HTML and make your site look awesome.',
-			},
-			'partThree' : {
-				'mainTitle':'CSS3 Tutorial',
-				'subTitle':'Learn CSS3 for modern web design',
-				'summary':'CSS3 is the latest version of CSS language (Cascading Style Sheets). in this course we will learn how to apply CSS3 to your website HTML and make your site look awesome.',			
-			}
-		}
-	}	
-	,
+	},
 	'javascript':{
 		'mainTitle':'Javascript Tutorial',
 		'subTitle':'javascript ES5',
@@ -61,7 +41,7 @@ $(document).ready(function(){
 		var blogSummaryClass = isEven ? 'blog-summary-one' : 'blog-summary-two';
 		
 		blogContent += '<div class="blog-container ' + blogContainerClass + '">';
-		blogContent += '<a href="/blogs" class="blog-anchor">'
+		blogContent += '<a href="/' + blog.href + '" class="blog-anchor">'
 		blogContent += '<div class="' + blogMainTitleClass + '">' + blog.mainTitle + '</div>';
 		blogContent += '<div class="' + blogSubTitleClass + '">' + blog.subTitle + '</div>';
 		blogContent += '<div class="' + blogSummaryClass + '">' + blog.summary + '</div>';
