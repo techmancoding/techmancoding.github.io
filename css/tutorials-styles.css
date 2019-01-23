@@ -47,3 +47,19 @@ body{
 	color:#171717;
 	text-shadow: 0 0 1px #e58f70, 0 0 3px #9774ae;
 }
+
+.tutorials-tags-container{
+	width:100%;
+	height:50px;
+	padding-bottom:20px;
+}
+
+/* fix this and merge with blogs.css */
+.tutorials-tags-container .tag-js,
+.tutorials-tags-container .tag-css3,
+.tutorials-tags-container .tag-html5
+{
+	width:50px;
+	height:50px;
+	background-size:50px 50px;
+}
