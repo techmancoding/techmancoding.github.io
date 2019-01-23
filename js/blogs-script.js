@@ -27,7 +27,11 @@ $(document).ready(function(){
 			blogContent += '<div class="blog-tags-container">';
 			for(var i=0; i<tagsArray.length; i++){
 				var blogTag = tagsArray[i]; // the name of the tag is the name of the tag class in the CSS file
-				blogContent += '<a href="/" class="anchor-text-decoration-none"><div class="blog-tag ' + blogTag + '"></div></a>';
+				var tagHref = '';
+				if(BlogsTagsJSON.hasOwnProperty(blogTag)){
+					tagHref = BlogsTagsJSON[blogTag];
+				}
+				blogContent += '<a href="' + tagHref + '" class="anchor-text-decoration-none"><div class="blog-tag ' + blogTag + '"></div></a>';
 			}
 			blogContent += '</div>'; // blog-tags-container close tag
 		}
