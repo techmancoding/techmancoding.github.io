@@ -15,38 +15,35 @@
 		<script src="../js/jquery-3.3.1.slim.js"></script>
 		<script src="../js/menu-script.js"></script>
 		<script src="../js/footer-script.js"></script>
-		<script src="../js/code-snippet-script.js"></script>
+		<script src="../js/blogs-object.json"></script>
 		<script src="../js/blogs-script.js"></script>
 		
 		<!-- styles section -->
 		<link rel="stylesheet" href="../css/common-styles.css" />
 		<link rel="stylesheet" href="../css/menu-styles.css" />
 		<link rel="stylesheet" href="../css/footer-styles.css" />
-		<link rel="stylesheet" href="../css/code-snippet-styles.css" />
 		<link rel="stylesheet" href="../css/blogs-styles.css" />
+				
+		<link rel="stylesheet" href="../css/tutorials-styles.css" />
+	
 	</head>
 	
 	<body>	
 		<resources path=".." style="display:none;"></resources>	
-		<navmenu anchors="[/, home];[/empty-template,empty]"></navmenu>
-		
-		
+		<navmenu anchors="[/, Home];[/tutorials/empty-template#intro, Intro];[/tutorials/empty-template#basic, Basic]"></navmenu>
+			
 		<nav></nav>
 
-			
-			
-		<!-- WRITE YOUR CODE HERE ! and delete this section -->
-		<style type="text/css">
-			body{
-				margin:0px;
-				padding:0px;
-				font-family: "monospace","New Lucida Console";
-			}
-		</style>
-		<div style="height:1000px;"> </div>
-		<!-- WRITE YOUR CODE HERE ! and delete this section -->	
-			
-			
+		<section class="tutorial-header-section">
+			<div class="tutorial-header-title">Tags</div>
+			<img src="../img/logo.png" class="tutorial-header-image"></img>
+		</section>
+
+		<section>
+			<div id="blogs-container">
+				<div id="blogs-header">Blogs and Articles</div>
+			</div>
+		</section>
 			
 		<footer></footer>
 		
