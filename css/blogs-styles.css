@@ -99,10 +99,6 @@
 	float:right;
 }
 
-.blog-anchor{
-	text-decoration: none;
-}
-
 .blog-tags-container{
 	width:calc(100% - 20px);
 	height:29px;

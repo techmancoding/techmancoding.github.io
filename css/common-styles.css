@@ -45,6 +45,10 @@ body{
 	text-shadow: 0 0 5px #fafafa, 0 0 7px #050505;
 }
 
+.anchor-text-decoration-none{
+	text-decoration: none;
+}
+
 .disable-select{
 	-webkit-user-select: none;
 	-moz-user-select: none;

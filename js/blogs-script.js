@@ -15,7 +15,7 @@ $(document).ready(function(){
 		var blogSummaryClass = isEven ? 'blog-summary-one' : 'blog-summary-two';
 		
 		blogContent += '<div class="blog-container ' + blogContainerClass + '">';
-		blogContent += '<a href="' + blog.href + '" class="blog-anchor">'
+		blogContent += '<a href="' + blog.href + '" class="anchor-text-decoration-none">'
 		blogContent += '<div class="' + blogMainTitleClass + '">' + blog.mainTitle + '</div>';
 		blogContent += '<div class="' + blogSubTitleClass + '">' + blog.subTitle + '</div>';
 		blogContent += '<div class="' + blogSummaryClass + '">' + blog.summary + '</div>';
@@ -27,7 +27,7 @@ $(document).ready(function(){
 			blogContent += '<div class="blog-tags-container">';
 			for(var i=0; i<tagsArray.length; i++){
 				var blogTag = tagsArray[i]; // the name of the tag is the name of the tag class in the CSS file
-				blogContent += '<div class="blog-tag ' + blogTag + '"></div>';
+				blogContent += '<a href="/" class="anchor-text-decoration-none"><div class="blog-tag ' + blogTag + '"></div></a>';
 			}
 			blogContent += '</div>'; // blog-tags-container close tag
 		}
