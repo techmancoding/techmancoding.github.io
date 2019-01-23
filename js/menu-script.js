@@ -3,10 +3,10 @@ $(document).ready(function(){
 
 	var $nav = $('nav');
 		
-	var path = $('resources').attr('path');
+	var relativePath = $('resources').attr('path');
 	var anchorsArray = $('navmenu').attr('anchors').split(';');
 	
-	$nav.append('<div><a href="/"><img src="' + path + '/img/logo.png" class="nav-logo"/></a></div>');
+	$nav.append('<div><a href="/"><img src="' + relativePath + '/img/logo.png" class="nav-logo"/></a></div>');
 	$nav.append('<div id="menu-button" class="disable-select">&#9776;</div>');
 	$nav.append('<div id="menu-container" style="display:none;"></div>');
 	

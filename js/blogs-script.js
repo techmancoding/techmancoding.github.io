@@ -7,7 +7,7 @@ $(document).ready(function(){
 		var blog = BlogsJSON[key];
 		var blogContent = '';
 		var isEven = (counter % 2 == 0);
-		var path = $('resources').attr('path');
+		var relativePath = $('resources').attr('path');
 		
 		var blogContainerClass = isEven ? 'blog-bg-vertical' : 'blog-bg-horizontal';
 		var blogMainTitleClass = isEven ? 'blog-main-title-one' : 'blog-main-title-two';
@@ -19,7 +19,7 @@ $(document).ready(function(){
 		blogContent += '<div class="' + blogMainTitleClass + '">' + blog.mainTitle + '</div>';
 		blogContent += '<div class="' + blogSubTitleClass + '">' + blog.subTitle + '</div>';
 		blogContent += '<div class="' + blogSummaryClass + '">' + blog.summary + '</div>';
-		blogContent += '<div class="blog-img-container"><img src="' + path + '' + blog.imagePath + '" class="blog-img"/></div>';		
+		blogContent += '<div class="blog-img-container"><img src="' + relativePath + '' + blog.imagePath + '" class="blog-img"/></div>';		
 		blogContent += '</a>'
 		
 		var tagsArray = blog.tags;
