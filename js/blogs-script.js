@@ -1,5 +1,5 @@
 
-var BlogsJSON = {
+/*var BlogsJSON = {
 	'html5': {
 		'mainTitle':'HTML5 Tutorial',
 		'subTitle':'Learn HTML5 for modern web design',
@@ -24,7 +24,7 @@ var BlogsJSON = {
 		'tags':['tag-js'],
 		'href' : '',
 	}	
-}
+}*/
 
 $(document).ready(function(){
 	var $container = $('#blogs-container');
