@@ -21,7 +21,8 @@ var BlogsJSON = {
 		'subTitle':'javascript ES5',
 		'summary':'JavaScript language can make your site better. in this course we will learn how to implement JavaScript language to make your website more dynamic.',
 		'imagePath':'./img/js-logo.png',
-		'tags':['tag-js']
+		'tags':['tag-js'],
+		'href' : '',
 	}	
 }
 
@@ -41,7 +42,7 @@ $(document).ready(function(){
 		var blogSummaryClass = isEven ? 'blog-summary-one' : 'blog-summary-two';
 		
 		blogContent += '<div class="blog-container ' + blogContainerClass + '">';
-		blogContent += '<a href="/' + blog.href + '" class="blog-anchor">'
+		blogContent += '<a href="' + blog.href + '" class="blog-anchor">'
 		blogContent += '<div class="' + blogMainTitleClass + '">' + blog.mainTitle + '</div>';
 		blogContent += '<div class="' + blogSubTitleClass + '">' + blog.subTitle + '</div>';
 		blogContent += '<div class="' + blogSummaryClass + '">' + blog.summary + '</div>';
