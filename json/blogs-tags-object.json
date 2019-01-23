@@ -1,0 +1,4 @@
+
+var BlogsTagsJSON = {	
+	'tag-html5' : '/tutorials/tags/html5-tutorials',	
+}
