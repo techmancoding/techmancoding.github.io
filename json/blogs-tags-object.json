@@ -1,4 +1,6 @@
 
 var BlogsTagsJSON = {	
+	'tag-js' : '/tutorials/tags/javascript-tutorials',
+	'tag-css3' : '/tutorials/tags/css3-tutorials',
 	'tag-html5' : '/tutorials/tags/html5-tutorials',	
 }
