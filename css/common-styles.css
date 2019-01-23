@@ -1,3 +1,10 @@
+body{
+	margin:0px;
+	padding:70px 0 0 0;
+	background-color:#232323;
+	font-family: "monospace","New Lucida Console";
+}
+
 .gradient-gray-vertical{
 	background-image:linear-gradient(to right, #292929, #333333, #292929);
 }
@@ -14,7 +21,23 @@
 	border-bottom: solid 1px #525252;
 }
 
-.mid-header{
+.header-section{
+	width:100%;
+	min-height:50px;
+	background-image:linear-gradient(to right bottom, #aeaeae, #bebebe, #cecece);
+	text-align:center;
+}
+
+.header-title-one{
+	padding: 10px 0;
+	line-height:50px;
+	color:#1a1a1a;
+	font-size:35px;
+	font-weight:bold;
+	text-shadow: 0 0 1px #fafafa, 0 0 2px #050505, 0 0 3px #3687be;
+}
+
+.header-title-two{
 	color:#323232;
 	font-weight:bold;
 	font-size:30px;

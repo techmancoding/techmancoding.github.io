@@ -1,19 +1,14 @@
-body{
-	margin:0px;
-	padding:0px;
-	font-family: "monospace","New Lucida Console";
-}
-
 section{
-	min-height:700px;
+	min-height:400px;
 	background-color:171717;
 	border-bottom: solid 1px #555555;
 }
 
 #section-one{
-	padding-top:170px;
+	padding:10px 0;
 }
 
 #section-three{
 	height:auto;
 	overflow:hidden;
+}
