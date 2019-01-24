@@ -51,19 +51,35 @@ $(document).ready(function(){
 			$menu.append('<a href="' + menuItem.href + '"><div class="menu-item-container ' + menuItemSelected + '">' + menuItem.text +'</div></a>');
 		}
 		else{ // menu item contains sub menu
+			var isCurrentPageInSubMenu = false;
 			var subMenuId = 'sub-menu-id-' + counter;
 			var subMenuButtonId = 'sub-menu-button-id-' + counter;
-			var subMenu = '<div id="' + subMenuId + '" class="sub-menu-container" style="display:none;">';
+			
 			for(var subKey in menuItem.submenu){
+				if(subKey == pageKey){
+					isCurrentPageInSubMenu = true;
+					break;
+				}
+			}
+			
+			var subMenu = '<div id="' + subMenuId + '" class="sub-menu-container">';		
+			for(var subK in menuItem.submenu){
 				var subMenuItem = menuItem.submenu[subKey];
-				subMenu += '<a href="' + subMenuItem.href + '"><div class="sub-menu-item-container ' + menuItemSelected + '">' + subMenuItem.text +'</div></a>';
+				var subMenuItemSelected = (subK == pageKey) ? 'sub-menu-item-selected' : '';
+				subMenu += '<a href="' + subMenuItem.href + '"><div class="sub-menu-item-container ' + subMenuItemSelected + '">' + subMenuItem.text +'</div></a>';
 			}
 			subMenu += '</div>';
+			
 			$menu.append('<a href="' + menuItem.href + '"><div class="menu-item-container-with-sub-button ' + menuItemSelected + '">' + menuItem.text +'</div></a><div id="' + subMenuButtonId + '" class="sub-menu-button"><div class="disable-select">&#9763;</div></div>');
 			$menu.append(subMenu);
+			
 			var $subMenu = $('#' + subMenuId);
 			var $subMenuButton = $('#' + subMenuButtonId);
-			$subMenu.append('<div style="clear:both;"></div>');
+		
+			if(!isCurrentPageInSubMenu){
+				$subMenu.css({'display':'none'});
+			}
+			
 			$subMenuButton.on('click', function(){
 				$subMenu.toggle();
 			});
