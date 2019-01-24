@@ -61,12 +61,12 @@ nav{
 	font-weight:bold;
 	text-align:left;
 	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 7px #553d70;
-	border: 1px solid #050505;
 }
 
 .menu-item-container{
 	width:calc(100% - 40px);
 	border-radius:3px;
+	border: 1px solid #050505;
 }
 
 .menu-item-container-with-sub-button{
@@ -74,12 +74,18 @@ nav{
 	display:inline-block;
 	float:left;
 	border-radius:3px 0 0 3px;
+	border: 1px solid #050505;
 	border-right: none;
 }
 
-.menu-item-container.menu-item-selected, 
+.menu-item-container.menu-item-selected { 	
+	border: 1px solid #d57a70;
+	text-shadow: 0 0 2px #fafafa, 0 0 3px #559dd0, 0 0 5px #e579a3;
+}
+
 .menu-item-container-with-sub-button.menu-item-selected { 	
 	border: 1px solid #d57a70;
+	border-right: none;
 	text-shadow: 0 0 2px #fafafa, 0 0 3px #559dd0, 0 0 5px #e579a3;
 }
 
@@ -87,7 +93,6 @@ nav{
 	/* highlight the sub menu button if the menu item is selected */
 	border: 1px solid #d57a70;
 	border-left: none;
-	box-shadow: none;
 }
 
 .sub-menu-item-container{
