@@ -1,0 +1,49 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta name="theme-color" content="#252525" /> <!-- change the browser address bar color -->
+			
+		<title>TechMan Coding | Web Development Tutorials</title>	
+		
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]--> 
+
+		<!-- scripts section -->
+		<script src="../js/jquery-3.3.1.slim.js"></script>
+		<script src="../js/menu-script.js"></script>
+		<script src="../js/footer-script.js"></script>
+		<script src="../json/blogs-object.json"></script>
+		<script src="../json/blogs-tags-object.json"></script>
+		<script src="../js/blogs-script.js"></script>
+		<script src="../js/tutorials-script.js"></script>
+				
+		<!-- styles section -->
+		<link rel="stylesheet" href="../css/common-styles.css" />
+		<link rel="stylesheet" href="../css/menu-styles.css" />
+		<link rel="stylesheet" href="../css/footer-styles.css" />
+		<link rel="stylesheet" href="../css/blogs-styles.css" />
+		<link rel="stylesheet" href="../css/tutorials-styles.css" />						
+	</head>
+	
+	<body>	
+		<resources path=".." style="display:none;"></resources>	
+		<navmenu anchors="[/, Home];[/tutorials/tags/html5-tutorials, HTML5];[/tutorials/tags/css3-tutorials, CSS3];[/tutorials/tags/javascript-tutorials, Javascript]"></navmenu>
+			
+		<nav></nav>
+
+		<section class="header-section">
+			<div class="header-title-one">Tutorials</div>
+			<div class="tutorials-tags-container"></div>
+		</section>
+
+		<section>
+			<div id="blogs-container"></div>
+		</section>
+			
+		<footer></footer>
+		
+	</body>
+</html>
