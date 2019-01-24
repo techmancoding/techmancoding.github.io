@@ -51,18 +51,15 @@ nav{
 }
 
 .menu-item-container, .menu-item-container-with-sub-button{
-	width:calc(100% - 40px);
 	height:50px;
 	line-height:50px;
 	margin: 10px 0 0 10px;
 	padding: 0  10px;
-	position:relative;
 	background-image:linear-gradient(to right, #292929, #373737, #2a2a2a);
 	color:#171717;
 	font-size:22px;
 	font-weight:bold;
 	text-align:left;
-	border-radius:3px;
 	box-shadow: 0 0 3px #000;
 	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 7px #553d70;
 }
@@ -81,12 +78,24 @@ nav{
 }
 
 .menu-item-container.menu-item-selected, .menu-item-container-with-sub-button.menu-item-selected{ 	
-	box-shadow: 0 0 3px #d73ea5;
+	box-shadow: 0 0 7px #aeaeae;
 	text-shadow: 0 0 2px #fafafa, 0 0 3px #559dd0, 0 0 5px #e579a3;
 }
 
 .sub-menu-item-container{
-	color:red;
+	width:calc(100% - 80px);
+	height:30px;
+	line-height:30px;
+	margin: 10px 0 0 10px;
+	padding: 0  30px;
+	background-image:linear-gradient(to left, #191919, #121212);
+	color:#171717;
+	font-size:20px;
+	font-weight:bold;
+	text-align:left;
+	border-radius:3px;
+	box-shadow: 0 0 3px #000;
+	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 7px #553d70;
 }
 
 .sub-menu-button{
@@ -95,12 +104,10 @@ nav{
 	line-height:50px;
 	margin: 10px 10px 0 0;
 	display:inline-block;
-	clear:right;
-
 	background-color:#171717;
 	color:#979797;
 	font-size:30px;
 	text-align:center;
 	border-radius:3px;
-	box-shadow: 0 0 2px #979797;
+	box-shadow: 0 0 2px #000;
 }
