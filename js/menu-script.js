@@ -70,7 +70,7 @@ $(document).ready(function(){
 			}
 			subMenu += '</div>';
 			
-			$menu.append('<a href="' + menuItem.href + '"><div class="menu-item-container-with-sub-button ' + menuItemSelected + '">' + menuItem.text +'</div></a><div id="' + subMenuButtonId + '" class="sub-menu-button"><div class="disable-select">&#9763;</div></div>');
+			$menu.append('<a href="' + menuItem.href + '"><div class="menu-item-container-with-sub-button ' + menuItemSelected + '">' + menuItem.text +'</div></a><div id="' + subMenuButtonId + '" class="sub-menu-button ' + menuItemSelected + '"><div class="disable-select">&#9763;</div></div>');
 			$menu.append(subMenu);
 			
 			var $subMenu = $('#' + subMenuId);
