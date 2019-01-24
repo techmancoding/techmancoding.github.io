@@ -64,7 +64,7 @@ nav{
 }
 
 .menu-item-container{
-	width:calc(100% - 40px);
+	width:calc(100% - 40px - 2px);
 	border-radius:3px;
 	border: 1px solid #050505;
 }
@@ -96,7 +96,7 @@ nav{
 }
 
 .sub-menu-item-container{
-	width:calc(100% - 80px);
+	width:calc(100% - 80px - 2px);
 	height:30px;
 	line-height:30px;
 	margin: 10px 0 0 10px;
