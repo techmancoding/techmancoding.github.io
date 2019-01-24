@@ -1,0 +1,32 @@
+var MenuItemsJSON = {
+	'home' : {
+		'href' : '/',
+		'text' : 'Home',
+	},
+	'tutorials' : {
+		'href' : '/tutorials',
+		'text' : 'Tutorials',
+		'submenu' : {
+			'html5': {
+				'href' : '/tutorials/tags/html5-tutorials',
+				'text' : 'HTML5'
+			},
+			'css3': {
+				'href' : '/tutorials/tags/css3-tutorials',
+				'text' : 'CSS3'
+			},
+			'javascript': {
+				'href' : '/tutorials/tags/javascript-tutorials',
+				'text' : 'Javascript'
+			}
+		}
+	},
+	'empty-template' :{
+		'href' : '/tutorials/empty-template',
+		'text' : 'empty'
+	},
+	'section5' :{
+		'href' : '/#section-five',
+		'text' : 'five section'
+	}
+};

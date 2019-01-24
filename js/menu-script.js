@@ -1,41 +1,8 @@
 $(document).ready(function(){
 
-	var anchorsObject = {
-		'home' : {
-			'href' : '/',
-			'text' : 'Home',
-		},
-		'tutorials' : {
-			'href' : '/tutorials',
-			'text' : 'Tutorials',
-			'submenu' : {
-				'html5': {
-					'href' : '/tutorials/tags/html5-tutorials',
-					'text' : 'HTML5'
-				},
-				'css3': {
-					'href' : '/tutorials/tags/css3-tutorials',
-					'text' : 'CSS3'
-				},
-				'javascript': {
-					'href' : '/tutorials/tags/javascript-tutorials',
-					'text' : 'Javascript'
-				}
-			}
-		},
-		'empty-template' :{
-			'href' : '/tutorials/empty-template',
-			'text' : 'empty'
-		},
-		'section5' :{
-			'href' : '/#section-five',
-			'text' : 'five section'
-		}
-	};
-
 	var $nav = $('nav');	
 	var relativePath = $('resources').attr('path');
-	var pageKey = $('resources').attr('pagekey'); // need to be the same as the key on anchorsObject
+	var pageKey = $('resources').attr('pagekey'); // need to be the same as the key on MenuItemsJSON
 	$nav.append('<div><a href="/"><img src="' + relativePath + '/img/logo.png" class="nav-logo"/></a></div>');
 	$nav.append('<div id="menu-button" class="disable-select">&#9776;</div>'); // 	&#9784;   	&#9763;   	&#9762;
 	$nav.append('<div id="menu-container" style="display:none;"></div>');   // 	&#5121;.     	&#5123;
@@ -43,8 +10,8 @@ $(document).ready(function(){
 	var $menuButton = $('#menu-button');
 	var counter = 0;
 	
-	for(var key in anchorsObject){
-		var menuItem = anchorsObject[key];
+	for(var key in MenuItemsJSON){
+		var menuItem = MenuItemsJSON[key];
 		var menuItemSelected = (key == pageKey) ? 'menu-item-selected' : '';
 				
 		if(!menuItem.submenu){		
@@ -85,7 +52,6 @@ $(document).ready(function(){
 			});
 		}
 		counter++;		
-		//$menu.append('<a href="' + menuItem.href + '"><div class="menu-item-container ' + menuItemSelected + '">' + menuItem.text +'</div></a>');
 	}
 
 	$menuButton.on('click', function(){
