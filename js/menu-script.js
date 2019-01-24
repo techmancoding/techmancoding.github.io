@@ -55,17 +55,17 @@ $(document).ready(function(){
 			var subMenuId = 'sub-menu-id-' + counter;
 			var subMenuButtonId = 'sub-menu-button-id-' + counter;
 			
-			for(var subKey in menuItem.submenu){
-				if(subKey == pageKey){
+			for(var subK in menuItem.submenu){
+				if(subK == pageKey){
 					isCurrentPageInSubMenu = true;
 					break;
 				}
 			}
 			
 			var subMenu = '<div id="' + subMenuId + '" class="sub-menu-container">';		
-			for(var subK in menuItem.submenu){
+			for(var subKey in menuItem.submenu){
 				var subMenuItem = menuItem.submenu[subKey];
-				var subMenuItemSelected = (subK == pageKey) ? 'sub-menu-item-selected' : '';
+				var subMenuItemSelected = (subKey == pageKey) ? 'sub-menu-item-selected' : '';
 				subMenu += '<a href="' + subMenuItem.href + '"><div class="sub-menu-item-container ' + subMenuItemSelected + '">' + subMenuItem.text +'</div></a>';
 			}
 			subMenu += '</div>';
