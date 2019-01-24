@@ -16,7 +16,8 @@ $(document).ready(function(){
 		var anchor = anchorsArray[i].replace('[','').replace(']','').split(',');
 		var aHref = anchor[0];
 		var aText = anchor[1];
-		$menu.append('<a href="' + aHref + '"><div class="menu-item-container">' + aText +'</div></a>');
+		var aShadow = anchor[2];
+		$menu.append('<a href="' + aHref + '"><div class="menu-item-container ' + aShadow + '">' + aText +'</div></a>');
 	}
 	
 	$menu.append('<div style="clear:both;"></div>');
