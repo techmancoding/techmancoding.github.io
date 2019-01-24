@@ -64,7 +64,7 @@ nav{
 	text-align:left;
 	border-radius:3px;
 	box-shadow: 0 0 3px #000;
-	text-shadow: 0 0 1px #fafafa, 0 0 2px #757575, 0 0 3px #eaeaea;
+	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 7px #553d70;
 }
 
 .menu-item-container.menu-item-selected{ 	
