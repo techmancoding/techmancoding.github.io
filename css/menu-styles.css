@@ -50,13 +50,13 @@ nav{
 	text-decoration: none;
 }
 
-.menu-item-container{
+.menu-item-container, .menu-item-container-with-sub-button{
 	width:calc(100% - 40px);
 	height:50px;
 	line-height:50px;
 	margin: 10px 0 0 10px;
 	padding: 0  10px;
-	display:inline-block;
+	position:relative;
 	background-image:linear-gradient(to right, #292929, #373737, #2a2a2a);
 	color:#171717;
 	font-size:22px;
@@ -67,7 +67,40 @@ nav{
 	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 7px #553d70;
 }
 
-.menu-item-container.menu-item-selected{ 	
+.menu-item-container{
+	width:calc(100% - 40px);
+	border-radius:3px;
+}
+
+.menu-item-container-with-sub-button{
+	width:calc(100% - 40px - 50px - 2px);
+	margin-right:2px;
+	display:inline-block;
+	float:left;
+	border-radius:3px;
+}
+
+.menu-item-container.menu-item-selected, .menu-item-container-with-sub-button.menu-item-selected{ 	
 	box-shadow: 0 0 3px #d73ea5;
 	text-shadow: 0 0 2px #fafafa, 0 0 3px #559dd0, 0 0 5px #e579a3;
+}
+
+.sub-menu-item-container{
+	color:red;
+}
+
+.sub-menu-button{
+	width:50px;
+	height:50px;
+	line-height:50px;
+	margin: 10px 10px 0 0;
+	display:inline-block;
+	clear:right;
+
+	background-color:#171717;
+	color:#979797;
+	font-size:30px;
+	text-align:center;
+	border-radius:3px;
+	box-shadow: 0 0 2px #979797;
 }
