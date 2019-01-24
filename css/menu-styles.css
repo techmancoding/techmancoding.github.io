@@ -63,14 +63,14 @@ nav{
 	font-weight:bold;
 	text-align:left;
 	border-radius:3px;
-	box-shadow: 0 0 1px #000;
+	box-shadow: 0 0 3px #000;
 	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 3px #559dd0;
 }
 
 .menu-item-container.menu-item-home{ 
-	box-shadow: 0 0 5px #a73ef5;
+	box-shadow: 0 0 3px #d73ea5;
 }
 
 .menu-item-container.menu-item-tutorials{ 
-	box-shadow: 0 0 3px #d73ea5;
+	box-shadow: 0 0 3px #a73ef5;
 }
