@@ -42,7 +42,7 @@ nav{
 	left:0;
 	background-color:#151515;
 	Overflow:scroll;
-	border-radius:3px;
+	border-radius: 0 3px 3px 3px;
 	border: solid 1px #151515;
 }
 
