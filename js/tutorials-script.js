@@ -8,11 +8,19 @@ $(document).ready(function(){
 		$tagsContainer.append('<div style="clear:both;"></div>');
 	}
 	
-	var $filterTutorials = $('#tutorials-filter-container');
-	if($filterTutorials && $filterTutorials.length > 0){
-		var tagFilter = $filterTutorials.attr('tagfilter');
-		
-		alert(tagFilter);
+	$container = $('#tutorials-filter-container');
+	if($container && $container.length > 0){
+		var tagFilter = $container.attr('tagfilter');		
+		var counter = 0;		
+		for(var key in BlogsJSON){	
+			var blog = BlogsJSON[key];
+			if($.inArray(tagFilter, blog.tags) !== -1){
+				var isEven = (counter % 2 == 0);
+				var relativePath = $('resources').attr('path');
+				addBlogToContainer($container, blog, relativePath, isEven);
+				counter++;	
+			}
+		}
 	}
 	
 });
