@@ -51,19 +51,18 @@ nav{
 }
 
 .menu-item-container{
-	width:130px;
-	height:90px;
-	line-height:130%;
+	width:calc(100% - 60px);
+	height:50px;
+	line-height:50px;
 	margin: 10px 0 0 10px;
-	padding-top:40px;
+	padding: 0  20px;
 	display:inline-block;
-	float:left;
 	background-image:linear-gradient(to right, #292929, #373737, #2a2a2a);
 	color:#171717;
 	font-size:22px;
 	font-weight:bold;
-	text-align:center;
+	text-align:left;
 	border-radius:3px;
 	box-shadow: 0 0 1px #000;
-	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505;
+	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 3px #559dd0;
 }
