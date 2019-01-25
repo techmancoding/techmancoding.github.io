@@ -2,12 +2,12 @@ footer{
 	width:100%;
 	height:350px;
 	bottom:0;
-	background-color:#070707;
+	background-image:linear-gradient(to right bottom, #aeaeae, #bebebe, #cecece);
 }
 
 .footer-text{
 	padding: 20px 0 0 0;
-	color:#a1a1a1;
+	color:#232323;
 	font-size:15px;
 	text-align:center;
 }
@@ -25,25 +25,29 @@ footer{
 	text-decoration:none;
 }
 
+#footer-menu-container ul, #footer-menu-container li {
+	margin:5px;
+	padding:0; 	
+	list-style-type:none;
+}
+
 .footer-menu-item, .footer-sub-menu-item{
-	width:150px;
-	height:25px;
-	line-height:25px;
-	margin: 10px 0 0 10px;
-	color:#171717;
+	height:22px;
+	line-height:22px;
+	color:#323232;
 	font-weight:bold;
 	text-align:left;
 }
 
 
 .footer-menu-item{
-	margin: 5px 0 0 10px;
+	margin: 0 0 0 10px;
 	font-size:16px;
-	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 7px #553d70;	
+	text-shadow: 0 0 1px #fafafa, 0 0 2px #050505;	
 }
 
 .footer-sub-menu-item{
-	margin: 5px 0 0 30px;
+	margin: 0 0 0 15px;
 	font-size:16px;
-	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 7px #353d90;	
+	text-shadow: 0 0 1px #eaeaea, 0 0 2px #323232;	
 }

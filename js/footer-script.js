@@ -9,16 +9,26 @@ $(document).ready(function(){
 	
 	$footer.append('<div id="footer-menu-container"></div>');
 	var $menu = $('#footer-menu-container');
-	
+	$menu.append('<ul');
 	for(var key in MenuItemsJSON){
 		var menuItem = MenuItemsJSON[key];
-		$menu.append('<a href="' + menuItem.href + '"><div class="footer-menu-item">' + menuItem.text + '</div></a>');
+		var listItem = '<li><a href="' + menuItem.href + '" class="footer-menu-item">' + menuItem.text + '</a>';
 		
-		if(menuItem.submenu){				
+		if(menuItem.submenu){
+			listItem += '<ul>';				
 			for(var subKey in menuItem.submenu){
 				var subMenuItem = menuItem.submenu[subKey];
-				$menu.append('<a href="' + subMenuItem.href + '"><div class="footer-sub-menu-item">' + subMenuItem.text + '</div></a>');
+				listItem += '<li><a href="' + subMenuItem.href + '" class="footer-sub-menu-item">' + subMenuItem.text + '</a></li>';
 			}		
-		}		
+			listItem += '</ul>';
+			listItem += '</li>';
+		}	
+			
+		if(!menuItem.submenu){
+			listItem += '</li>';
+		}
+		
+		$menu.append(listItem);
 	}
+	$menu.append('<ul');
 });
