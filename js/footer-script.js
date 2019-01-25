@@ -3,9 +3,8 @@ $(document).ready(function(){
 	var relativePath = $('resources').attr('path');
 		
 	var $footer = $('footer');
-	$footer.append('<div class="footer-text">TechMan Coding &#xA9; 2019</div>');
-	$footer.append('<div class="footer-text">Contact info</div>');
-	//$footer.append('<div><img src="' + relativePath + '/img/logo.png" class="footer-logo"/></div>');	
+	$footer.append('<div class="footer-text">TechMan Coding 2019 &#xA9; All Rights Reserved</div>');
+	$footer.append('<div><img src="' + relativePath + '/img/logo.png" class="footer-logo"/></div>');	
 	
 	$footer.append('<div id="footer-menu-container"></div>');
 	var $menu = $('#footer-menu-container');
