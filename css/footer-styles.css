@@ -20,3 +20,30 @@ footer{
 	left:calc(50% - 70px);
 	border-radius:5px;
 }
+
+#footer-menu-container a{
+	text-decoration:none;
+}
+
+.footer-menu-item, .footer-sub-menu-item{
+	width:150px;
+	height:25px;
+	line-height:25px;
+	margin: 10px 0 0 10px;
+	color:#171717;
+	font-weight:bold;
+	text-align:left;
+}
+
+
+.footer-menu-item{
+	margin: 5px 0 0 10px;
+	font-size:16px;
+	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 7px #553d70;	
+}
+
+.footer-sub-menu-item{
+	margin: 5px 0 0 30px;
+	font-size:16px;
+	text-shadow: 0 0 2px #fafafa, 0 0 3px #050505, 0 0 7px #353d90;	
+}
