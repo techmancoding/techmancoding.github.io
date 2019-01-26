@@ -1,8 +1,6 @@
 footer{
 	width:100%;
 	min-height:350px;
-	position:absolute;
-	bottom:0;
 	background-image:linear-gradient(to right bottom, #232323, #272727, #2d2d2d);
 }
 
