@@ -1,6 +1,7 @@
 footer{
 	width:100%;
 	min-height:350px;
+	position:absolute;
 	bottom:0;
 	background-image:linear-gradient(to right bottom, #232323, #272727, #2d2d2d);
 }
@@ -47,11 +48,11 @@ footer{
 .footer-menu-item{
 	margin: 0 0 0 10px;
 	font-size:16px;
-	text-shadow: 0 0 5px #75239a, 0 0 7px #fafafa, 0 0 20px #050505;	
+	text-shadow: 0 0 5px #75239a, 0 0 7px #fafafa, 0 0 10px #050505;	
 }
 
 .footer-sub-menu-item{
 	margin: 0 0 0 15px;
 	font-size:16px;
-	text-shadow: 0 0 5px #563297, 0 0 7px #eaeaea, 0 0 20px #323232;	
+	text-shadow: 0 0 5px #563297, 0 0 7px #eaeaea, 0 0 10px #323232;	
 }
