@@ -132,10 +132,11 @@ nav{
 }
 
 .sub-menu-button-icon{
-	border-radius:50px
+	border-radius:50px;
 }
 
 .sub-menu-button-icon-translate{
-	color:#d57a70;
+	color:#7523aa;
+	font-size:34px;
 	transform: rotate(30deg);
 }
