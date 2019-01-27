@@ -37,17 +37,22 @@ $(document).ready(function(){
 			}
 			subMenu += '</div>';
 			
-			$menu.append('<a href="' + menuItem.href + '"><div class="menu-item-container-with-sub-button ' + menuItemSelected + '">' + menuItem.text +'</div></a><div id="' + subMenuButtonId + '" class="sub-menu-button ' + menuItemSelected + '"><div class="disable-select">&#9763;</div></div>');
+			$menu.append('<a href="' + menuItem.href + '"><div class="menu-item-container-with-sub-button ' + menuItemSelected + '">' + menuItem.text +'</div></a><div id="' + subMenuButtonId + '" class="sub-menu-button ' + menuItemSelected + '"><div class="sub-menu-button-icon disable-select">&#9763;</div></div>');
 			$menu.append(subMenu);
 			
 			var $subMenu = $('#' + subMenuId);
 			var $subMenuButton = $('#' + subMenuButtonId);
-		
+			var $subMenuIcon = $subMenuButton.find('.sub-menu-button-icon');
+	
 			if(!isCurrentPageInSubMenu){
 				$subMenu.css({'display':'none'});
 			}
+			else{
+				translateSubMenuIcon($subMenuIcon);
+			}
 			
 			$subMenuButton.on('click', function(){
+				translateSubMenuIcon($subMenuIcon);
 				$subMenu.toggle();
 			});
 		}
@@ -58,3 +63,13 @@ $(document).ready(function(){
 		$menu.toggle();
 	});
 });
+
+function translateSubMenuIcon($icon){
+	var iconClass = 'sub-menu-button-icon-translate';
+	if(!$icon.hasClass(iconClass)){
+		$icon.addClass(iconClass);
+	}
+	else{
+		$icon.removeClass(iconClass);
+	}
+}

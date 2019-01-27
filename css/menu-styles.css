@@ -130,3 +130,12 @@ nav{
 	border: 1px solid #050505;
 	border-left:none;
 }
+
+.sub-menu-button-icon{
+	border-radius:50px
+}
+
+.sub-menu-button-icon-translate{
+	color:#d57a70;
+	transform: rotate(30deg);
+}
